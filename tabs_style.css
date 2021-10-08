@@ -1,0 +1,11 @@
+<div class="container">	
+	<h2>Example: Create Dynamic Bootstrap Tabs with PHP & MySQL</h2>	
+	<br><br>
+	<?php include_once("tabs.php"); ?>
+	<ul class="nav nav-tabs">
+	<?php echo $category_html; ?>
+	</ul>	
+	<div class="tab-content">
+	<?php echo $product_html; ?>
+	</div>	
+</div>

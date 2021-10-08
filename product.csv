@@ -1,0 +1,4 @@
+"categoryid","categoryname"
+"1","abc"
+"productid","productname","qtyperunit","unitprice","unitinstock","discontinued","categoryid"
+"1","FD","1","1","1","Yes","1"

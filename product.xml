@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.3
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Oct 03, 2021 at 11:58 AM
+- Server version: 10.4.14-MariaDB
+- PHP Version: 7.4.11
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="product" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="category">
+                CREATE TABLE `category` (
+                  `categoryid` int(11) NOT NULL AUTO_INCREMENT,
+                  `categoryname` varchar(255) NOT NULL,
+                  PRIMARY KEY (`categoryid`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="product">
+                CREATE TABLE `product` (
+                  `productid` int(11) NOT NULL AUTO_INCREMENT,
+                  `productname` varchar(255) NOT NULL,
+                  `qtyperunit` int(11) NOT NULL,
+                  `unitprice` int(11) NOT NULL,
+                  `unitinstock` int(11) NOT NULL,
+                  `discontinued` varchar(255) NOT NULL,
+                  `categoryid` int(11) NOT NULL,
+                  PRIMARY KEY (`productid`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'product'
+    -->
+    <database name="product">
+        <!-- Table category -->
+        <table name="category">
+            <column name="categoryid">1</column>
+            <column name="categoryname">abc</column>
+        </table>
+        <!-- Table product -->
+        <table name="product">
+            <column name="productid">1</column>
+            <column name="productname">FD</column>
+            <column name="qtyperunit">1</column>
+            <column name="unitprice">1</column>
+            <column name="unitinstock">1</column>
+            <column name="discontinued">Yes</column>
+            <column name="categoryid">1</column>
+        </table>
+    </database>
+</pma_xml_export>
